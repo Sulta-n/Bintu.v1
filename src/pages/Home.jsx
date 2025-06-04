@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import About from "../components/about";
 import Experience from "../components/Experience";
 import Services from "../components/Services";
+import Portfolio from "../components/Portfolio";
 
 const Home = () => {
   return (
@@ -18,6 +19,8 @@ const Home = () => {
       <Experience />
       {/* Services */}
       <Services />
+      {/* Portfolio */}
+      <Portfolio />
     </>
   );
 };
