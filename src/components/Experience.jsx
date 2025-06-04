@@ -32,8 +32,11 @@ const Experience = () => {
               Frontend Development
             </h3>
             <div className=" grid grid-cols-2 gap-2 place-items-center">
-              {frontEnd.map((skill) => (
-                <article className="flex items-start justify-center space-x-4 text-left">
+              {frontEnd.map((skill, index) => (
+                <article
+                  className="flex items-start justify-center space-x-4 text-left"
+                  key={index}
+                >
                   <h2 className="text-primary">{skill.icon}</h2>
                   <div>
                     <h4 className="text-white">{skill.text}</h4>
@@ -50,8 +53,11 @@ const Experience = () => {
               Backend Development
             </h3>
             <div className=" grid grid-cols-2 gap-2 place-items-center">
-              {backEnd.map((skill) => (
-                <article className="flex items-start justify-center space-x-4 text-left">
+              {backEnd.map((skill, index) => (
+                <article
+                  className="flex items-start justify-center space-x-4 text-left"
+                  key={index}
+                >
                   <h2 className="text-primary">{skill.icon}</h2>
                   <div>
                     <h4 className="text-white">{skill.text}</h4>

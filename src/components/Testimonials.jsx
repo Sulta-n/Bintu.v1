@@ -49,7 +49,7 @@ const Testimonials = () => {
       </h1>
 
       <div className="container mx-auto max-w-5xl">
-        <div className="mx-auto w-[70%]">
+        <div className="mx-auto md:w-[70%]">
           <Swiper
             modules={[Pagination]}
             spaceBetween={40}

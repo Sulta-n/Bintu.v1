@@ -29,8 +29,11 @@ const About = () => {
           {/* Cards */}
           <div className="w-full h-full lg:ml-5">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-[1rem]">
-              {cards.map((card) => (
-                <article className="card flex flex-col justify-between items-center ">
+              {cards.map((card, index) => (
+                <article
+                  className="card flex flex-col justify-between items-center "
+                  key={index}
+                >
                   <h2 className="text-primary text-[1.7rem]">{card.icon}</h2>
                   <h5 className="text-white  text-[0.9rem] font-bold">
                     {card.text}

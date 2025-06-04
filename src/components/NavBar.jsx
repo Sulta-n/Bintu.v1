@@ -17,7 +17,7 @@ const NavBar = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav className=" fixed flex justify-center items-center bottom-8 left-1/2 bg-black/30 rounded-full py-3 px-6 space-x-5 translate-x-[-50%] backdrop-blur-[15px] z-50 w-max mx-auto">
-      {navs.map((nav) => (
+      {navs.map((nav, index) => (
         <a
           onClick={() => setActiveNav(nav.href)}
           href={nav.href}
@@ -25,6 +25,7 @@ const NavBar = () => {
             "text-white/40 text-[1.1rem] p-3 md:p-4 rounded-full transition-all duration-400 hover:text-white font-semibold",
             activeNav === nav.href ? "bg-primary-variant/40 text-white" : ""
           )}
+          key={index}
         >
           {nav.icon}
         </a>

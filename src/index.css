@@ -63,6 +63,10 @@
   @apply bg-background-variant border border-transparent rounded-3xl p-[2rem] text-center transition-all duration-300 hover:bg-transparent hover:border-primary-variant;
 }
 
+@utility inputs {
+  @apply border-2 border-primary text-white resize-none rounded-md p-5 focus:border-primary outline-0;
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;

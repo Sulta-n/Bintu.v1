@@ -6,6 +6,8 @@ import Experience from "../components/Experience";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -24,6 +26,10 @@ const Home = () => {
       <Portfolio />
       {/* Testimonials */}
       <Testimonials />
+      {/* Contact */}
+      <Contact />
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
