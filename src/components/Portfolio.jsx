@@ -39,7 +39,7 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: "template",
+    title: "Template",
     github: "https://githunb.com",
     demo: "https://dribbble.com/shots/16673715-Crypto-currency-dashboard-and-financial-data-visualization",
   },
